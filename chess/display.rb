@@ -1,5 +1,7 @@
 require_relative 'board'
 
-class Display
-  
+class Display(board)
+  def initialize
+    @board = Board.new
+  end
 end
